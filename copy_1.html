@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="Copy_1.css">
     <title>Portfolio</title>
 </head>
 
@@ -63,20 +63,35 @@
             </div>
 
             <br>
-
-            <div id="projects" class="container">
-                <h2 #="Projects">Projects:</h2>
-                <p>This section highlights some of my various projects. 
-                <div class="box-container">
-                <div class="box1"><a class= "insta" href= "https://www.instagram.com/petarvidovicx/" height="100px" width="200px">Photography</a></div>
-                <div class="box2"><a class="music" href= "https://open.spotify.com/artist/6HL8vRdmrOWbtmbTlx3WuY" height="200px" width="200px">Music</a></div>
-                <div class="box3"><a class="UI" href="https://www.techtarget.com/searchapparchitecture/definition/user-interface-UI#:~:text=The%20user%20interface%20(UI)%20is,an%20application%20or%20a%20website.">UI</a></div>
-                <div class="box4"><a class="client-work" href="https://www.archdaily.com/948631/pont-coffee-shop-studio-stof">Client Work</a></div>
-                <div class="box5"><a class="cafe" href="https://www.archdaily.com/948631/pont-coffee-shop-studio-stof">Cafe</a></div>
-                </div>
-                </p>
-            </div>
-
+<style>
+.grid-container{
+    margin: 3%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-auto-rows: minmax(auto, auto);
+    grid-row-gap: 8px;
+    grid-column-gap: 7px;
+    
+    grid-template-areas: 
+    "sidebar header header"
+    "sidebar1 content content"
+    "sidebar1 content1 content2"
+    "sidebar1 content3 content4"
+    "sidebar2 content5 content5"
+    }
+</style>
+<section class="grid-container">
+    <article class="box box1">1</article>
+    <article class="box box2">2</article>
+    <article class="box box3">3</article>
+    <article class="box box4">4</article>
+    <article class="box box5">5</article>
+    <article class="box box6">6</article>
+    <article class="box box7">7</article>
+    <article class="box box8">8</article>
+    <article class="box box9">9</article>
+  </section>
+        
             <br>
 
             <div id="contact" class="container">

@@ -203,6 +203,9 @@ flex-direction: column;
   padding: 30px;
   position: relative;
 }
+.box .box1 {
+    grid-row: 2 / span 2;
+}
 /* media query*/
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
@@ -217,3 +220,21 @@ flex-direction: column;
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {...}
+
+@media screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+    }
+  .grid-container{
+  grid-template-areas: 
+  "sidebar sidebar sidebar"
+  "header header header"
+  "sidebar1 sidebar1 sidebar1"
+  "content content content"
+  "content1 content1 content1"
+  "content2 content2 content2"
+  "content3 content3 content3"
+  "content4 content4 content4"
+  "sidebar2 sidebar2 sidebar2"
+  "content5 content5 content5"
+  }

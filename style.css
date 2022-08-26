@@ -3,18 +3,19 @@
     margin:0;
     padding:0;  
   }
-
+html {
+  scroll-behavior: smooth;
+}
   /*IDs*/
   #page-container {
-    position: relative;
-    min-height: 100vh;
+display: flex;
+flex-direction: column;
   }
   #content-wrap {
     padding-bottom: 2.5rem;  /* footer height */
   }
 
   #footer-contact {
-    position: absolute;
     bottom: 0;
     width: 100%;
     height: 2.5rem;            /* Footer height */
@@ -24,15 +25,14 @@
 
 /*variables*/
 :root {
-    --persianblue: #2218A7;
-    --moodyblue: #737CCF;
-    --spindle: #BBC4E8;
-    --linkwater: #E1E5F8;
+    --persianblue: #eae7dc;
+    --moodyblue: #d8c3a5;
+    --spindle: #8e8d8a;
+    --linkwater: #E85A4F;
+   
 }
   /* Element Selectors */
   body {
-    display: table;
-    position: relative;
     font-family: "Goudy Bookletter 1911", sans-serif;
     font-size: 20px;
     background-color: var(--persianblue);
@@ -45,6 +45,11 @@
     text-decoration: none;
   }
   
+  li a:hover {
+    background-color:#E85A4F;
+    color: white;
+  }
+
   a {
     text-decoration: none;
     color: var(--linkwater);
@@ -56,63 +61,159 @@
     line-height: 60px;
     background-color: var(--moodyblue);
     border-bottom: 10px solid var(--spindle);
-    display: inline-block, absolute;
-  }
-  
-  
-  img {
-    display: block;
-    margin: 0px auto;
-  }
-  
-  section {
-    margin-bottom: 0;
-    padding: 20px 10px 40px 10px;
-    border-top: 3px solid #DDAF94;
-    background-color:  #E8CEBF;
-  }
-       
-  button {
-    height: 40px;
-    width: 120px;
-    background-color: var(--linkwater);
-    color:var(--spindle);
-  }
+    display: inline-block;
+ }
    
   /* Class Selectors */
-  .text-center {
-    text-align: center;
+  .portrait-photo{
+    width: 300px;
+    height: 200px;
+    border: 10px solid #8e8d8a;
+    padding: 50px;
+    margin: 20px;
+    background-image:
+    url(smileportrait.jpeg);
+    object-fit:contain;
+    background-position: center;
+
   }
-  
   .primary-nav-bar {
     text-align: right;
     z-index: 1;
 
   }
-  .left-section-titles {
-    justify-content: left;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 100px;
-    display:inline-block;
-    margin-left: 50px;
-  }
+  .banner { 
+  height: 300px;
+  background-size: cover;
+  background-position-y: center;
+  background-image: url('https://img.freepik.com/free-photo/abstract-red-smooth-wave-lines_1017-24875.jpg?w=2000&t=st=1661281999~exp=1661282599~hmac=396d7af65f744ed1fe0e3d3fc8159d71552f9e0b460c443cbfbc59b99ed4a2ea') 
 
-  .about-me-text {
-    display: flex inline-block;
-   text-align: right;
-    font-size: 20px;
-    margin-right: 50px;
-    height: 300px;
-    margin-left: 300px;
-  }
-;
-  .project-boxes {
-    box-sizing: 350px;
-    height: 150px;
-    margin: 30px;
-    border: 5px var(--linkwater);
-  }
+  }   
 
+.box-container {
+  margin-left: 33rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box1 {
+  width: 840px;
+  height: 200px; 
+  border: 10px solid #8e8d8a;
+  padding: 10px;
+  margin: 20px;
+  background-image:
+  linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
+  url(boat.jpeg);
+  object-fit: cover;
+  background-position: center;
+}
+.box2 {
+  width: 300px;
+  height: 100px;
+  border: 10px solid #8e8d8a;
+  padding: 50px;
+  margin: 20px;
+  background-image:
+  linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
+  url(record.jpeg);
+  object-fit: cover;
+  background-position: center;
+
+}
+.box3 {
+  width: 300px;
+  height: 100px;
+  border: 10px solid #8e8d8a;
+  padding: 50px;
+  margin: 20px;
+  background-image:
+  linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
+  url(sky.jpeg);
+  object-fit: cover;
+  background-position: center;
+}
+.box4 {
+  width: 300px;
+  height: 100px;
+  border: 10px solid #8e8d8a;
+  padding: 50px;
+  margin: 20px;
+  background-image:
+  linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
+  url(pont.jpeg);
+  object-fit: cover;
+  background-position: center;
+}
+
+.box5 {
+  width: 300px;
+  height: 100px;
+  border: 10px solid #8e8d8a;
+  padding: 50px;
+  margin: 20px;
+  background-image:
+  linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
+  url(cafe.jpeg);
+  object-fit: cover;
+  background-position: center;
+}
+
+.box1image {
+  object-fit: cover;
+}
+.titlebox1 {
+  width: 50px;
+  height: 20px;
+  border: 10px solid #8e8d8a;
+  padding: 20px;
+  margin: 20px;
+}
   .footer-text {
     display: inline-block;
   }
+
+.insta {
+ 
+ height: 100px;
+ width: 300px;
+}
+.music {
+ 
+  height: 100px;
+  width: 300px;
+ }
+
+
+.photography-text {
+  width: 50px;
+  height: 10px;
+  border: 10px solid #eae7dc;
+  padding: 30px;
+  margin-right: 6em;
+  margin-bottom: 10em;
+  position: relative;
+}
+
+.music-text {
+  background-color: #eae7dc;
+  border: 10px solid #eae7dc;
+  width: 50px;
+  height: 10px;
+  padding: 30px;
+  position: relative;
+}
+/* media query*/
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  flex-wrap: columns: .box1, .box2, .box3, .box4 ;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
