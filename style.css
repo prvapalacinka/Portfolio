@@ -12,13 +12,13 @@ display: flex;
 flex-direction: column;
   }
   #content-wrap {
-    padding-bottom: 2.5rem;  /* footer height */
+    padding-bottom: 3vw;  /* footer height */
   }
 
   #footer-contact {
     bottom: 0;
     width: 100%;
-    height: 2.5rem;            /* Footer height */
+    height: 3vw;            /* Footer height */
     background-color: var(--moodyblue); 
     border-color: var(--linkwater);  
   }
@@ -33,7 +33,7 @@ flex-direction: column;
 }
   /* Element Selectors */
   body {
-    font-family: "Goudy Bookletter 1911", sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     background-color: var(--persianblue);
     color: var(--linkwater);
@@ -91,25 +91,25 @@ flex-direction: column;
   }   
 
 .box-container {
-  margin-left: 33rem;
+  margin-left: 33vw;
   display: flex;
   flex-wrap: wrap;
 }
 
 .box1 {
-  width: 840px;
+  width: 50vw;
   height: 200px; 
   border: 10px solid #8e8d8a;
   padding: 10px;
   margin: 20px;
   background-image:
   linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
-  url(boat.jpeg);
+  url(pont.jpeg);
   object-fit: cover;
   background-position: center;
 }
 .box2 {
-  width: 300px;
+  width: 21vw;
   height: 100px;
   border: 10px solid #8e8d8a;
   padding: 50px;
@@ -122,32 +122,32 @@ flex-direction: column;
 
 }
 .box3 {
-  width: 300px;
+  width: 21vw;
   height: 100px;
   border: 10px solid #8e8d8a;
   padding: 50px;
   margin: 20px;
   background-image:
   linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
-  url(sky.jpeg);
+  url(rain.jpeg);
   object-fit: cover;
   background-position: center;
 }
 .box4 {
-  width: 300px;
+  width: 21vw;
   height: 100px;
   border: 10px solid #8e8d8a;
   padding: 50px;
   margin: 20px;
   background-image:
   linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
-  url(pont.jpeg);
+  url(boat.jpeg);
   object-fit: cover;
   background-position: center;
 }
 
 .box5 {
-  width: 300px;
+  width: 21vw;
   height: 100px;
   border: 10px solid #8e8d8a;
   padding: 50px;
