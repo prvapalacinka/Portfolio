@@ -63,34 +63,58 @@
             </div>
 
             <br>
-<style>
-.grid-container{
-    margin: 3%;
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-auto-rows: minmax(auto, auto);
-    grid-row-gap: 8px;
-    grid-column-gap: 7px;
-    
-    grid-template-areas: 
-    "sidebar header header"
-    "sidebar1 content content"
-    "sidebar1 content1 content2"
-    "sidebar1 content3 content4"
-    "sidebar2 content5 content5"
-    }
-</style>
-<section class="grid-container">
-    <article class="box box1">1</article>
-    <article class="box box2">2</article>
-    <article class="box box3">3</article>
-    <article class="box box4">4</article>
-    <article class="box box5">5</article>
-    <article class="box box6">6</article>
-    <article class="box box7">7</article>
-    <article class="box box8">8</article>
-    <article class="box box9">9</article>
-  </section>
+
+            <style>
+                .container {
+                  display: flex;
+                  justify-content: space-between;
+                }
+              
+                .container h1 {
+                border-right: 5px solid #e98074;
+                  flex: 0 0 25%;
+          
+                }
+              
+                .container div {
+                  flex: 0 0 65%;
+                }
+                
+                .box1 {
+                  height: 100px;
+                  margin-bottom: 2px;
+                  border: 2px red solid;
+                }
+                
+                .box2 {
+                  height: 100px;
+                  margin-bottom: 2px;
+                  border: 2px blue solid;
+                  width: 49%;
+                }
+                .box3 {
+                  height: 100px;
+                  margin-bottom: 2px;
+                  border: 2px red solid;
+                }
+                
+                .box4 {
+                  height: 100px;
+                  margin-bottom: 2px;
+                  border: 2px blue solid;
+                  width: 49%;
+                }
+                .box5 {
+                  height: 100px;
+                  margin-bottom: 2px;
+                  border: 2px red solid;
+                  width: 49%;
+                }
+                
+              </style>
+            <section>
+               
+            </section>
         
             <br>
 
